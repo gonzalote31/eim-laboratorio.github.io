@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Photo Gallery HTML Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Photo Gallery HTML Template">
+	<meta name="keywords" content="endGam,gGaming, magazine, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<style>
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		.gallery-item {
+			width: calc((100vw - 576px)/3); /* Ajusta el tamaño del cuadro según tus necesidades */
+			height: 200px; /* Ajusta el tamaño del cuadro según tus necesidades */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			background-color: #f9f9f9;
+			text-align: center;
+			padding: 20px;
+		}
+		@media only screen and (min-width: 992px) and (max-width: 1199px) {
+			.gallery-item {
+				width: calc((100vw - 420px)/3);
+			}
+		}
+		@media only screen and (min-width: 768px) and (max-width: 991px) {
+			.gallery-item {
+				width: calc((100vw - 120px)/3);
+			}
+		}
+		@media only screen and (max-width: 767px) {
+			.gallery-item {
+				width: calc((100vw - 80px)/2);
+			}
+		}
+
+		.gallery-content h2 {
+			margin: 0;
+			font-size: 24px;
+			color: #333;
+		}
+
+		.gallery-content p {
+			margin: 5px 0 0;
+			font-size: 16px;
+			color: #666;
+		}
+	</style>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Top right elements -->
+	<div class="spacial-controls" style="z-index: 99999;">
+		<div class="nav-switch-warp">
+			<div class="nav-switch">
+				<div class="ns-bar"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Top right elements end -->
+
+	<div class="main-warp">
+		<!-- header section -->
+		<header class="header-section" style="z-index: 99999;">
+			<div class="header-close">
+				<i class="fa fa-times"></i>
+			</div>
+			<div>
+				<a href="" class="site-logo">
+					<img src="./img/logo.png" alt="">
+				</a>
+				<img src="img/menu-icon.png" alt="" class="menu-icon">
+				<ul class="main-menu">
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./introducion.html">Introducción</a></li>
+					<li><a href="./objetivos.html">Objetivos</a></li>
+					<li><a href="./recomendaciones.html">Recomendaciones</a></li>
+					<li><a href="./nomenclatura.html">Nomenclatura</a></li>
+					<li class="active"><a href="./equipo-mecanico.html">Equipos Mecánicos</a></li>
+					<li><a href="./herramientas.html">Herramientas</a></li>
+				</ul>
+			</div>
+			<div class="copyright">Kevin Castillo 2024. ® Todos los Derechos Reservados.</div>
+		</header>
+		<!-- header section end -->
+
+		<!-- Page section -->
+		<div class="page-section gallery-page">
+			<div>
+				<br>
+				<h2 style="text-align: center;">
+					<b>EQUIPOS MECÁNICOS</b>
+				</h2>
+				<br>
+			</div>
+			<div class="portfolio-gallery">
+				<a href="guia-de-procesos.html#banco_de_presion_negativa">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Banco de Presión Negativa</h2>
+							<p>FAME-IC-PN01</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-procesos.html#banco_de_control_automatico_y_control_industrial">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Banco de Control Automático y Control Industrial</h2>
+							<p>FAME-IC-CI01</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-procesos.html#horno_tostador">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Horno Tostador</h2>
+							<p>FAME-IC-HT01</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-procesos.html#deshidratador_de_alimentos">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Deshidratador de Alimentos</h2>
+							<p>FAME-IC-DH01</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-procesos.html#banco_de_laboratorio_para_realizar_pruebas_de_caudal">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Banco de Laboratorio para Realizar Pruebas de Caudal</h2>
+							<p>FAME-IC-PC01</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- Page section end-->
+	</div>
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+</html>

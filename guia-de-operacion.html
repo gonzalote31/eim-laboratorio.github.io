@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Photo Gallery HTML Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Photo Gallery HTML Template">
+	<meta name="keywords" content="endGam,gGaming, magazine, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<style>
+		.site-btn.sb-solid-dark {
+			background-image: url("../img/download.png") !important;
+			background-size: 20%;
+			background-size: 10%;
+			background-position-y: center;
+		}
+
+		.card-wrap {
+            /* width: 300px;
+            height: 400px; */
+            perspective: 800px;
+            position: relative;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            /* background: rgba(128, 128, 128, 0.3); */
+			background: #f7f9fb;
+            background-blend-mode: luminosity;
+            backdrop-filter: blur(45px);
+            /* border-radius: 15px; */
+            /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+            transition: transform 0.2s, box-shadow 0.2s;
+			border: 0px;
+        }
+
+        .card::before {
+            content: "";
+            pointer-events: none;
+            user-select: none;
+            position: absolute;
+            inset: 0px;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(156.52deg,
+                    rgba(255, 255, 255, 0.4) 2.12%,
+                    rgba(255, 255, 255, 0.0001) 39%,
+                    rgba(255, 255, 255, 0.0001) 54.33%,
+                    rgba(255, 255, 255, 0.1) 93.02%);
+            mask: linear-gradient(black, black) content-box,
+                linear-gradient(black, black);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        .border-wrap {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 15px;
+            pointer-events: none;
+            transition: background-image 0.2s;
+        }
+
+        .content {
+            color: #fff;
+            height: 100%;
+            display: block;
+        }
+
+        .content div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 24px;
+            position: relative;
+        }
+	</style>
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Top right elements -->
+	<div class="spacial-controls">
+		<div class="nav-switch-warp">
+			<div class="nav-switch">
+				<div class="ns-bar"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Top right elements end -->
+
+	<div class="main-warp">
+		<!-- header section -->
+		<header class="header-section">
+			<div class="header-close">
+				<i class="fa fa-times"></i>
+			</div>
+			<div>
+				<a href="" class="site-logo">
+					<img src="./img/logo.png" alt="">
+				</a>
+				<img src="img/menu-icon.png" alt="" class="menu-icon">
+				<ul class="main-menu">
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./introducion.html">Introducción</a></li>
+					<li><a href="./objetivos.html">Objetivos</a></li>
+					<li><a href="./recomendaciones.html">Recomendaciones</a></li>
+					<li><a href="./nomenclatura.html">Nomenclatura</a></li>
+					<li><a href="./equipo-mecanico.html">Equipos Mecánicos</a></li>
+					<li class="active"><a href="./herramientas.html">Herramientas</a></li>
+				</ul>
+			</div>
+			<div class="copyright">Kevin Castillo 2024. ® Todos los Derechos Reservados.</div>
+		</header>
+		<!-- header section end -->
+
+		<!-- Page section -->
+		<div class="page-section gallery-single-page">
+			<div class="gallery-single-warp">
+				<div class="row">
+					<div class="col-xl-12 p-0">
+						<div class="gallery-single-slider owl-carousel">
+							<!-- 1 -->
+							<div class="row" data-hash="calibrador_digital">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/calibrador_digital.PNG" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Calibrador Digital</h2>
+										<ul>
+											<li><span>Código:</span><b>-</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>El calibrador también denominado vernier, cartabón de corredera, pie de metro o pie de rey, es un instrumento de medición, principalmente de diámetros exteriores, interiores y profundidades, utilizado en el ámbito industrial.</p>
+										<a href="file/herramientas/calibrador_digital/CALIBRADOR_DIGITAL.pdf" download="Ficha - CALIBRADOR DIGITAL.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 2 -->
+							<div class="row" data-hash="calibrador_digital_de_profundidad">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/calibrador_digital_de_produnfidad.PNG" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Calibrador Digital de Profundidad</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET-CDP 045</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>Es un tipo de calibre especial que sirve para medir dimensiones de profundidad en piezas pequeñas, que van desde unos pocos centímetros hasta una fracción de milímetro. El calibre de profundidad, al igual que cualquier otro tipo de calibre o pie de rey consta de una regla con una escuadra en un extremo, sobre la cual se desliza otra regla destinada a indicar la medida y puede apreciar longitudes de 1/10, 1/20 o 1/50 de milímetro.</p>
+										<a href="file/herramientas/calibrador_digital_de_profundidad/CALIBRADOR_DIGITAL_DE_PROFUNDIDAD.pdf" download="Ficha - CALIBRADOR DIGITAL DE PROFUNDIDAD.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 3 -->
+							<div class="row" data-hash="calibrador_de_alturas">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/calibrador_de_alturas.PNG" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Calibrador de Alturas</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET - CA 058</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>El gramil o calibrador de altura con vernier es un instrumento de medición y trazado que se utiliza en los laboratorios de metrología y control de calidad, para realizar todo tipo de trazado en piezas como por ejemplo ejes de simetría, centros para taladros, excesos de mecanizado etc. Consta de una columna principal, que está graduada en centímetros y milímetros, por la que se desliza el calibre trazador que lleva incorporado un vernier de precisión. La punta del calibre es de metal duro.</p>
+										<a href="file/herramientas/calibrador_de_alturas/CALIBRADOR_DE_ALTURAS.pdf" download="Ficha - CALIBRADOR DE ALTURAS.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 4 -->
+							<div class="row" data-hash="micrometro_de_exteriores">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/micrometro.PNG" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Micrómetro de Exteriores</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET-M060</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>Este instrumento también es denominado tornillo de Palmer, calibre Palmer o simplemente palmer, es un instrumento de medición cuyo nombre deriva etimológicamente de las palabras griegas (micros, 'pequeño') y (metron, 'medición'). Este instrumento de medición cuyo funcionamiento está basado en el tornillo micrométrico y que sirve para medir las dimensiones de un objeto con alta precisión, del orden de centésimas de milímetros (0,01 mm) y de milésimas de milímetros (0,001mm).</p>
+										<a href="file/herramientas/micrometro_de_exteriores/MICROMETRO_DE_EXTERIORES.pdf" download="Ficha - MICRÓMETRO DE EXTERIORES.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 5 -->
+							<div class="row" data-hash="micrometro_digital">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/micrometro_digital.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Micrómetro Digital</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET-MD 091</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>Este instrumento también es denominado tornillo de Palmer, calibre Palmer o simplemente palmer, es un instrumento de medición cuyo nombre deriva etimológicamente de las palabras griegas (micros, 'pequeño') y (metron, 'medición'). <br><br>Este instrumento de medición cuyo funcionamiento está basado en el tornillo micrométrico y que sirve para medir las dimensiones de un objeto con alta precisión, del orden de centésimas de milímetros (0,01 mm) y de milésimas de milímetros (0,001mm).</p>
+										<a href="file/herramientas/micrometro_digital/MICROMETRO_DIGITAL.pdf" download="Ficha - MICRÓMETRO DIGITAL.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 6 -->
+							<div class="row" data-hash="reloj_comparador">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/reloj_comparador.PNG" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Reloj Comparador</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET-RC101</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>Es un instrumento de medición de dimensiones que se utiliza para comparar cotas mediante la medición indirecta del desplazamiento de una punta de contacto esférica cuando el aparato está fijo en un soporte. <br><br> Consta de un mecanismo de engranajes que amplifica el movimiento del vástago en un movimiento circular de las agujas sobre escalas graduadas circulares que permiten obtener medidas con una precisión de centésimas o milésimas de milímetro (micras).</p>
+										<a href="file/herramientas/reloj_comparador/reloj_comparador.pdf" download="Ficha - RELOJ COMPARADOR.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 7 -->
+							<div class="row" data-hash="medidor_de_agujeros">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/medidor_de_agujeros.PNG" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Medidor de Agujeros</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET-MH 0104</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>Están diseñados para medir los diámetros de agujeros muy pequeños. El desplazamiento radial de la punta de bola se convierte en un desplazamiento axial de la barra de medición, la cual se muestra en el indicador de carátula. <br><br>Los indicadores de carátula y las cubiertas de protección están disponibles opcionalmente. Algunos indicadores y las cubiertas de protección no se pueden usar con estos medidores de agujeros.</p>
+										<a href="file/herramientas/medidor_de_agujeros/MEDIDOR_DE_AGUJEROS.pdf" download="Ficha - MEDIDOR DE AGUJEROS.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 8 -->
+							<div class="row" data-hash="rugosimetro_analogico">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/rugisometro_analogico.PNG" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Rugosímetro Analógico</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET-RA 113</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>El rugosímetro en superficies es un dispositivo pequeño, ligero con un manejo muy sencillo. A pesar de que el rugosímetro en superficies funciona a un nivel muy complejo y elaborado, los resultados de medición se pueden obtener de una manera muy fácil y cómoda. Gracias a su alta resistencia el rugosímetro en superficies tiene una larga vida útil. Es un medidor portátil para determinar, con un único dispositivo, la profundidad de rugosidad es un término de la física de superficie, que define la desigualdad de la superficie.</p>
+										<a href="file/herramientas/rugosimetro_analogico/RUGOSIMETRO_ANALOGICO.pdf" download="Ficha - RUGOSÍMETRO ANALÓGICO.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 9 -->
+							<div class="row" data-hash="galgas_de_radios">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/galgas_de_radio.PNG" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Galgas de Radios</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET-GR0117</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>Se llama galga o calibre fijo o "feeler" a los elementos que se utilizan en el mecanizado de piezas para la verificación de las cotas con tolerancias estrechas cuando se trata de la verificación de piezas en serie. La galga también es una unidad de medida, ésta es utilizada para indicar el grosor (espesor) de materiales muy delgados o extremadamente finos; la galga se define como el grosor de un objeto expresado en micras multiplicado por 4.</p>
+										<a href="file/herramientas/galgas_de_radios/GALGAS_DE_RADIOS.pdf" download="Ficha - GALGAS DE RADIOS.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 10 -->
+							<div class="row" data-hash="galgas_de_espesores">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/galgas_espesor.PNG" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Galgas de Espesores</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET-GE 124</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>Las galgas que son calibres fijos no siempre indican su medición y pueden ser meras réplicas de la pieza modelo, lo cual las abarata, así algunas sirven sólo para establecer un patrón, con el que se compara la pieza para establecer su validez; están formadas por un mango de sujeción y dos elementos de medida, donde una medida corresponde al valor máximo de la cota a medir, y se llama «NO PASA» (en inglés «NOT GO»), y la otra medida corresponde al valor mínimo de la cota a medir, y se llama «PASA» («GO»).</p>
+										<a href="file/herramientas/galgas_de_espesores/GALGAS_DE_ESPESORES.pdf" download="Ficha - GALGAS DE ESPESORES.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 11 -->
+							<div class="row" data-hash="compas_para_interiores">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/compas_para_interiores.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Compas para Interiores</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET-CI 136</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>De la misma forma en que se utiliza el compás de exteriores en el maquinado de pieza tanto de madera como metálicas, el compás de interiores permite la verificación del torneado de piezas huecas de difícil acceso para un calibrador vernier.</p>
+										<a href="file/herramientas/compas_para_interiores/COMPAS_PARA_INTERIORES.pdf" download="Ficha - COMPAS PARA INTERIORES.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 12 -->
+							<div class="row" data-hash="regla_sinusoidal">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/regla_sinusoidal.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Regla Sinusoidal</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET - RS 179</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>La regla sinusoidal está hecha de acero de aleación endurecido y sirve como un dispositivo de ajuste de ángulo basado en el principio de seno. El paralelismo es de 2.5 µm y la precisión es de 2 µm. La distancia del centro del rodillo es de 100/200 mm según el modelo. Se puede crear un plano de referencia de ángulo con una regla sinusal junto con bloques de calibre. Aquí debe trabajar con una placa de medición / placa Granti para lograr un rango de ajuste de 0-60 grados. Distancia de soporte 100 mm, paralelismo 2.5 µm, precisión 2 µm. Distancia de soporte 200 mm, paralelismo 2.5 µm, precisión 4 µm.</p>
+										<a href="file/herramientas/regla_sinusoidal/REGLA_SINUSOIDAL.pdf" download="Ficha - REGLA SINUSOIDAL.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- 13 -->
+							<div class="row" data-hash="bloques_patron">
+								<div class="col-xl-6 p-0">
+									<div class="card-wrap">
+										<div class="card">
+											<div class="border-wrap"></div>
+											<div class="content">
+												<div>
+													<img src="img/herramientas/bloques_patron.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 p-0">
+									<div class="gallery-single-text">
+										<span>Herramientas</span>
+										<h2>Bloques Patrón</h2>
+										<ul>
+											<li><span>Código:</span><b>FAME-LMET-BP 181</b></li>
+										</ul>
+										<h5>Descripción:</h5>
+										<p>Los bloques patrón, calas o galgas patrón, bloques patrón longitudinales (BPL) o bloques Johansson -en honor a su inventor- son piezas macizas en forma de paralelepípedo, en las que dos de sus caras paralelas (o caras de medida) presentan un finísimo pulido especular que asegura excepcional paralelismo y planitud, pudiendo materializar una longitud determinada con elevada precisión.</p>
+										<a href="file/herramientas/bloques_patron/BLOQUES_PATRON.pdf" download="Ficha - REGLA SINUSOIDAL.pdf">
+											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Page section end-->
+	</div>
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			const cardWrap = $('.card-wrap');
+			const card = $('.card');
+			const borderWrap = $('.border-wrap');
+			let cardBounds = null;
+
+			function onMouseEnter() {
+				cardBounds = cardWrap[0].getBoundingClientRect();
+				$(document).on('mousemove', rotateToMouse);
+			}
+
+			function onMouseLeave() {
+				$(document).off('mousemove', rotateToMouse);
+				card.css('transform', '');
+				borderWrap.css('background-image', '');
+			}
+
+			function rotateToMouse(e) {
+				if (!cardBounds) return;
+
+				const mouseX = e.clientX;
+				const mouseY = e.clientY;
+				const leftX = mouseX - cardBounds.left;
+				const topY = mouseY - cardBounds.top;
+				const center = {
+				x: leftX - cardBounds.width / 2,
+				y: topY - cardBounds.height / 2,
+				};
+				const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
+
+				card.css('transform', `
+					scale3d(1.0, 1.0, 1.0)
+					perspective(800px)
+					rotate3d(
+					${-center.y / 100},
+					${center.x / 100},
+					0,
+					${Math.log(distance) * 0.8}deg
+					)
+				`);
+
+				borderWrap.css('background-image', `
+					radial-gradient(
+					circle at
+					${center.x * 2 + cardBounds.width / 2 - 30}px
+					${center.y * 2 + cardBounds.height / 2 - 30}px,
+					#000000,
+					#f7f9fb
+					)
+				`);
+			}
+
+			cardWrap.on('mouseenter', onMouseEnter);
+			cardWrap.on('mouseleave', onMouseLeave);
+			});
+	</script>
+
+	</body>
+</html>

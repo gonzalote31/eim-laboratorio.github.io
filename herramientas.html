@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Photo Gallery HTML Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Photo Gallery HTML Template">
+	<meta name="keywords" content="endGam,gGaming, magazine, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<style>
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		.gallery-item {
+			width: calc((100vw - 576px)/3); /* Ajusta el tamaño del cuadro según tus necesidades */
+			height: 200px; /* Ajusta el tamaño del cuadro según tus necesidades */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			background-color: #f9f9f9;
+			text-align: center;
+			padding: 20px;
+		}
+		@media only screen and (min-width: 992px) and (max-width: 1199px) {
+			.gallery-item {
+				width: calc((100vw - 420px)/3);
+			}
+		}
+		@media only screen and (min-width: 768px) and (max-width: 991px) {
+			.gallery-item {
+				width: calc((100vw - 120px)/3);
+			}
+		}
+		@media only screen and (max-width: 767px) {
+			.gallery-item {
+				width: calc((100vw - 80px)/2);
+			}
+		}
+
+		.gallery-content h2 {
+			margin: 0;
+			font-size: 24px;
+			color: #333;
+		}
+
+		.gallery-content p {
+			margin: 5px 0 0;
+			font-size: 16px;
+			color: #666;
+		}
+	</style>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Top right elements -->
+	<div class="spacial-controls" style="z-index: 99999;">
+		<div class="nav-switch-warp">
+			<div class="nav-switch">
+				<div class="ns-bar"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Top right elements end -->
+
+	<div class="main-warp">
+		<!-- header section -->
+		<header class="header-section" style="z-index: 99999;">
+			<div class="header-close">
+				<i class="fa fa-times"></i>
+			</div>
+			<div>
+				<a href="" class="site-logo">
+					<img src="./img/logo.png" alt="">
+				</a>
+				<img src="img/menu-icon.png" alt="" class="menu-icon">
+				<ul class="main-menu">
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./introducion.html">Introducción</a></li>
+					<li><a href="./objetivos.html">Objetivos</a></li>
+					<li><a href="./recomendaciones.html">Recomendaciones</a></li>
+					<li><a href="./nomenclatura.html">Nomenclatura</a></li>
+					<li><a href="./equipo-mecanico.html">Equipos Mecánicos</a></li>
+					<li class="active"><a href="./herramientas.html">Herramientas</a></li>
+				</ul>
+			</div>
+			<div class="copyright">Kevin Castillo 2024. ® Todos los Derechos Reservados.</div>
+		</header>
+		<!-- header section end -->
+
+		<!-- Page section -->
+		<div class="page-section gallery-page">
+			<div>
+				<br>
+				<h2 style="text-align: center;">
+					<b>HERRAMIENTAS</b>
+				</h2>
+				<br>
+			</div>
+			<div class="portfolio-gallery">
+				<a href="guia-de-operacion.html#calibrador_digital">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Calibrador Digital</h2>
+							<p>-</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#calibrador_digital_de_profundidad">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Calibrador Digital de Profundidad</h2>
+							<p>FAME-LMET-CDP 045</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#calibrador_de_alturas">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Calibrador de Alturas</h2>
+							<p>FAME-LMET - CA 058</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#micrometro_de_exteriores">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Micrómetro de Exteriores</h2>
+							<p>FAME-LMET-M060</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#micrometro_digital">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Micrómetro Digital</h2>
+							<p>FAME-LMET-MD 091</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#reloj_comparador">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Reloj Comparador</h2>
+							<p>FAME-LMET-RC101</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#medidor_de_agujeros">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Medidor de Agujeros</h2>
+							<p>FAME-LMET-MH 0104</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#rugosimetro_analogico">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Rugosímetro Analógico</h2>
+							<p>FAME-LMET-RA 113</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#galgas_de_radios">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Galgas de Radios</h2>
+							<p>FAME-LMET-GR0117</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#galgas_de_espesores">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Galgas de Espesores</h2>
+							<p>FAME-LMET-GE 124</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#compas_para_interiores">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Compas para Interiores</h2>
+							<p>FAME-LMET-CI 136</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#regla_sinusoidal">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Regla Sinusoidal</h2>
+							<p>FAME-LMET - RS 179</p>
+						</div>
+					</div>
+				</a>
+				<a href="guia-de-operacion.html#bloques_patron">
+					<div class="gallery-item galt">
+						<img src="#" alt="">
+						<div class="gallery-content">
+							<h2>Bloques Patrón</h2>
+							<p>FAME-LMET-BP 181</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- Page section end-->
+	</div>
+
+	<!-- Search model -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">x</div>
+			<form class="search-moderl-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+</html>

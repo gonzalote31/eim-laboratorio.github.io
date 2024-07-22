@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Photo Gallery HTML Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Photo Gallery HTML Template">
+	<meta name="keywords" content="endGam,gGaming, magazine, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<style>
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		.gallery-item {
+			width: calc((100vw - 576px)/3); /* Ajusta el tamaño del cuadro según tus necesidades */
+			height: 200px; /* Ajusta el tamaño del cuadro según tus necesidades */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			background-color: #f9f9f9;
+			text-align: center;
+			padding: 20px;
+		}
+		@media only screen and (min-width: 992px) and (max-width: 1199px) {
+			.gallery-item {
+				width: calc((100vw - 420px)/3);
+			}
+		}
+		@media only screen and (min-width: 768px) and (max-width: 991px) {
+			.gallery-item {
+				width: calc((100vw - 120px)/3);
+			}
+		}
+		@media only screen and (max-width: 767px) {
+			.gallery-item {
+				width: calc((100vw - 80px)/2);
+			}
+		}
+
+		.gallery-content h2 {
+			margin: 0;
+			font-size: 24px;
+			color: #333;
+		}
+
+		.gallery-content p {
+			margin: 5px 0 0;
+			font-size: 16px;
+			color: #666;
+		}
+	</style>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Top right elements -->
+	<div class="spacial-controls" style="z-index: 99999;">
+		<div class="nav-switch-warp">
+			<div class="nav-switch">
+				<div class="ns-bar"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Top right elements end -->
+
+	<div class="main-warp">
+		<!-- header section -->
+		<header class="header-section" style="z-index: 99999;">
+			<div class="header-close">
+				<i class="fa fa-times"></i>
+			</div>
+			<div>
+				<a href="" class="site-logo">
+					<img src="./img/logo.png" alt="">
+				</a>
+				<img src="img/menu-icon.png" alt="" class="menu-icon">
+				<ul class="main-menu">
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./introducion.html">Introducción</a></li>
+					<li><a href="./objetivos.html">Objetivos</a></li>
+					<li><a href="./recomendaciones.html">Recomendaciones</a></li>
+					<li class="active"><a href="./nomenclatura.html">Nomenclatura</a></li>
+					<li><a href="./equipo-mecanico.html">Equipos Mecánicos</a></li>
+					<li><a href="./herramientas.html">Herramientas</a></li>
+				</ul>
+			</div>
+			<div class="copyright">Kevin Castillo 2024. ® Todos los Derechos Reservados.</div>
+		</header>
+		<!-- header section end -->
+
+		<!-- Page section -->
+		<div class="page-section gallery-page">
+			<ul class="portfolio-filter">
+				<li class="filter all active" data-filter="*">General</li>
+				<li class="filter" data-filter=".colegio">Establecimiento</li>
+				<li class="filter" data-filter=".photo">Facultad</li>
+				<li class="filter" data-filter=".nature">Área</li>
+				<li class="filter" data-filter=".love">Equipo</li>
+				<!-- <li class="filter" data-filter=".animals">Número de Equipo</li> -->
+			</ul>
+			<div class="portfolio-gallery">
+				<div class="gallery-item galt colegio">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>ESPOCH</h2>
+						<p>Escuela Superior Politécnica de Chimborazo</p>
+					</div>
+				</div>
+				<div class="gallery-item galt photo">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>FAME</h2>
+						<p>Facultad de Mecánica</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>LE</h2>
+						<p>Laboratorio de Electrónica</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>ED</h2>
+						<p>Laboratorio de Ensayos No Destructivos</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>CI</h2>
+						<p>Laboratorio de Control Industrial</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>LV</h2>
+						<p>Laboratorio de Vibraciones</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>LT</h2>
+						<p>Laboratorio Turbomaquinaria</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>MF</h2>
+						<p>Laboratorio de Mecánica de Fluidos</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>CI</h2>
+						<p>Laboratorio de Control Automático e Instrumentación</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>LM</h2>
+						<p>Laboratorio de Metalografía</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>RM</h2>
+						<p>Laboratorio de Resistencia de Materiales</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>NA</h2>
+						<p>Laboratorio de Neumática y Automatización</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>HN</h2>
+						<p>Laboratorio de Sistemas Hidráulicos y Neumáticos</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>TT</h2>
+						<p>Laboratorio de Tratamientos Térmicos</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>LF</h2>
+						<p>Laboratorio de Física I, II, III</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>MH</h2>
+						<p>Taller de Máquinas Herramientas</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>TS</h2>
+						<p>Taller de Soldadura</p>
+					</div>
+				</div>
+				<div class="gallery-item galt nature">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>TF</h2>
+						<p>Taller de Fundición</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>CT</h2>
+						<p>Banco de control de temperatura</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>CI</h2>
+						<p>Banco de Control Automático y Control Industrial</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>PN</h2>
+						<p>Banco de presión negativa</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>HT</h2>
+						<p>Horno tostador</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>PP</h2>
+						<p>Banco de pruebas de presión</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>DH</h2>
+						<p>Deshidratador de alimentos</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>CT</h2>
+						<p>Calibrador digital de temperatura</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>PC</h2>
+						<p>Banco de pruebas de caudal</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>EP</h2>
+						<p>Lámpara Estroboscópica</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>ID</h2>
+						<p>Indicador digital de temperatura</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>TL</h2>
+						<p>Tacómetro láser</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>PL</h2>
+						<p>Pirómetro láser</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>CP</h2>
+						<p>Calibrador digital de presión</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>CI</h2>
+						<p>Banco de Control Automático y Control Industrial</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>CT</h2>
+						<p>Banco de control de temperatura</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>HT</h2>
+						<p>Horno tostador</p>
+					</div>
+				</div>
+				<div class="gallery-item galt love">
+					<img src="#" alt="">
+					<div class="gallery-content">
+						<h2>PN</h2>
+						<p>Banco de presión negativa</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Page section end-->
+	</div>
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
