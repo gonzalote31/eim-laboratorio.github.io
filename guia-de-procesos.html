@@ -19,6 +19,9 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
 	<link rel="stylesheet" href="css/animate.css"/>
 
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/style.css"/>
 
@@ -33,6 +36,37 @@
 			background-size: 20%;
 			background-size: 10%;
 			background-position-y: center;
+		}
+		.site-btn.sb-solid-dark-play {
+			background-image: url("../img/play.png") !important;
+			background-size: 20%;
+			background-size: 10%;
+			background-position-y: center;
+		}
+		/* Popup with video or map */
+		.mfp-fade.mfp-bg {
+			opacity: 0;
+			-webkit-transition: all 0.15s ease-out; 
+			-moz-transition: all 0.15s ease-out; 
+			transition: all 0.15s ease-out;
+		}
+		.mfp-fade.mfp-bg.mfp-ready {
+			opacity: 0.8;
+		}
+		.mfp-fade.mfp-bg.mfp-removing {
+			opacity: 0;
+		}
+		.mfp-fade.mfp-wrap .mfp-content {
+			opacity: 0;
+			-webkit-transition: all 0.15s ease-out; 
+			-moz-transition: all 0.15s ease-out; 
+			transition: all 0.15s ease-out;
+		}
+		.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+			opacity: 1;
+		}
+		.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+			opacity: 0;
 		}
 	</style>
 
@@ -167,11 +201,7 @@
 							<!-- 5 -->
 							<div class="row" data-hash="deshidratador_de_alimentos">
 								<div class="col-xl-6 p-0">
-									<!-- <img src="img/equipos-mecanicos/deshidratador_de_alimentos.png" alt=""> -->
-									<video controls>
-										<source src="video/deshidratador_de_alimentos.mp4" type="video/mp4">
-										Tu navegador no soporta la reproducción de video.
-									</video>
+									<img src="img/equipos-mecanicos/deshidratador_de_alimentos.png" alt="">
 								</div>
 								<div class="col-xl-6 p-0">
 									<div class="gallery-single-text">
@@ -185,17 +215,17 @@
 										<a href="file/equipos_mecanicos/deshidratador_de_alimentos/DESHIDRATADOR_DE_ALIMENTOS.pdf" download="Ficha - DESHIDRATADOR DE ALIMENTOS.pdf">
 											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
 										</a>
+										<br><br>
+										<a class="popup-video" href="video/deshidratador_de_alimentos.mp4">
+											<button class="site-btn sb-solid-dark-play">Video</button>
+										</a>
 									</div>
 								</div>
 							</div>
 							<!-- 6 -->
 							<div class="row" data-hash="minicongelador">
 								<div class="col-xl-6 p-0">
-									<!-- <img src="img/equipos-mecanicos/minicongelador.png" alt=""> -->
-									<video controls>
-										<source src="video/minicongelador.mp4" type="video/mp4">
-										Tu navegador no soporta la reproducción de video.
-									</video>
+									<img src="img/equipos-mecanicos/minicongelador.png" alt="">
 								</div>
 								<div class="col-xl-6 p-0">
 									<div class="gallery-single-text">
@@ -208,6 +238,10 @@
 										<p>Al tener control digital, este nos permite programar y ajustar la temperatura para adaptarse a diferentes necesidades de almacenamiento, lo que lo hace muy versátil en aplicaciones tanto comerciales como industriales.</p>
 										<a href="file/equipos_mecanicos/minicongelador/MINICONGELADOR.pdf" download="Ficha - MINICONGELADOR.pdf">
 											<button class="site-btn sb-solid-dark">Descargar Ficha</button>
+										</a>
+										<br><br>
+										<a class="popup-video" href="video/minicongelador.mp4">
+											<button class="site-btn sb-solid-dark-play">Video</button>
 										</a>
 									</div>
 								</div>
@@ -240,7 +274,22 @@
 	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/circle-progress.min.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('.popup-video').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				mainClass: 'mfp-fade',
+				removalDelay: 160,
+				preloader: false,
+
+				fixedContentPos: false
+			});
+		});
+	</script>
 
 	</body>
 </html>
